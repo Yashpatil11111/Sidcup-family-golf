@@ -110,7 +110,7 @@ video{
 }
 
 #page2{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     z-index: 10;
 }
@@ -154,6 +154,41 @@ video{
     color: #95c11e;
 }
 
+#about-us{
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    padding: 0px  50px;
+    z-index: 10;
+}
+
+#about-us img{
+    width: 220px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#about-us-in{
+    width: 50%;
+    text-align: center;
+}
+
+#about-us-in h3{
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+#about-us-in p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
 
 @keyframes scroll {
     from {
@@ -164,3 +199,68 @@ video{
     }
     
 }
+
+.card-container{
+    /* background-color: red; */
+    height: 60vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+    z-index: 10;
+}
+
+.card{
+    height: 80%;
+    width: 24%;
+    /* background-color: blue; */
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+#card1{
+    background-image: url(https://sidcup-golf-family.netlify.app/Assests/card1.avif);
+}
+
+#card2{
+    background-image: url(https://sidcup-golf-family.netlify.app/Assests/card2.webp);
+}
+
+#card3{
+    background-image: url(https://sidcup-golf-family.netlify.app/Assests/card3.avif);
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #95C11E;
+    padding: 26px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all linear 0.4s;
+
+}
+
+.overlay h4{
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.overlay p{
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.overlay:hover{
+    opacity: 1;
+
+}
+
+
+
