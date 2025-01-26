@@ -34,3 +34,45 @@ gsap.to("#main", {
         scrub: 1,
     }
 });
+
+gsap.from("#collan1", {
+    x:-50,
+    y:-50,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: "#collan1",
+        scroller: "body",
+        start: "top 50%",
+        end: "top 47%",
+        scrub: 1,
+    }
+});
+
+gsap.from("#collan2", {
+    x:-70,
+    y:70,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: "#collan1",
+        scroller: "body",
+        start: "top 50%",
+        end: "top 47%",
+        scrub: 1,
+    }
+});
+
+gsap.from("#page4 h1", {
+    y:50,
+
+    scrollTrigger: {
+        trigger: "#page4 h1",
+        scroller: "body",
+        start: "top 75%",
+        end: "top 70%",
+        scrub: 3,
+    }
+});
+
+
