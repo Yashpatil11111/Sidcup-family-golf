@@ -35,6 +35,20 @@ gsap.to("#main", {
     }
 });
 
+gsap.from("#about-us", {
+    y:40,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: "#about-us",
+        scroller: "body",
+        marker: true,
+        start: "top 75%",
+        end: "top 70%",
+        scrub: 1,
+    }
+});
+
 gsap.from("#collan1", {
     x:-50,
     y:-50,
